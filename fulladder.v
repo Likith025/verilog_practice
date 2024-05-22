@@ -9,7 +9,7 @@ module fulladder(A,B,Cin,SUM,Cout);
     wire w1;
     half_adder h1(A,B,w1,w2);
     half_adder h2(w1,Cin,SUM,w3);
-    and a1(Cout,w2,w3);
+    or a1(Cout,w2,w3);
 endmodule
 
 module half_adder(
